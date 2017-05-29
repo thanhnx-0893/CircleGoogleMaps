@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15C19BEFD4AAF51CF2EB77E3 /* Pods_CircleGoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B025CFDE1DE9CD996FCC778A /* Pods_CircleGoogleMaps.framework */; };
+		922B19991EE4826D00B6587A /* GMSMapView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922B19981EE4826D00B6587A /* GMSMapView+Extensions.swift */; };
+		922B199B1EE4859900B6587A /* FitCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922B199A1EE4859900B6587A /* FitCircleViewController.swift */; };
+		9269EC2E1EDC8252000D883F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9269EC2D1EDC8252000D883F /* AppDelegate.swift */; };
+		9269EC301EDC8252000D883F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9269EC2F1EDC8252000D883F /* ViewController.swift */; };
+		9269EC331EDC8252000D883F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9269EC311EDC8252000D883F /* Main.storyboard */; };
+		9269EC351EDC8252000D883F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9269EC341EDC8252000D883F /* Assets.xcassets */; };
+		9269EC381EDC8252000D883F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9269EC361EDC8252000D883F /* LaunchScreen.storyboard */; };
+		9269EC401EDC84E5000D883F /* InvertedCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9269EC3F1EDC84E5000D883F /* InvertedCircleViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E16B165A94B5E2E7750B014 /* Pods-CircleGoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleGoogleMaps.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircleGoogleMaps/Pods-CircleGoogleMaps.release.xcconfig"; sourceTree = "<group>"; };
+		8AC6EA1646E0FF71227211B5 /* Pods-CircleGoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleGoogleMaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CircleGoogleMaps/Pods-CircleGoogleMaps.debug.xcconfig"; sourceTree = "<group>"; };
+		922B19981EE4826D00B6587A /* GMSMapView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GMSMapView+Extensions.swift"; sourceTree = "<group>"; };
+		922B199A1EE4859900B6587A /* FitCircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitCircleViewController.swift; sourceTree = "<group>"; };
+		9269EC2A1EDC8252000D883F /* CircleGoogleMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleGoogleMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9269EC2D1EDC8252000D883F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9269EC2F1EDC8252000D883F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9269EC321EDC8252000D883F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9269EC341EDC8252000D883F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9269EC371EDC8252000D883F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9269EC391EDC8252000D883F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9269EC3F1EDC84E5000D883F /* InvertedCircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvertedCircleViewController.swift; sourceTree = "<group>"; };
+		B025CFDE1DE9CD996FCC778A /* Pods_CircleGoogleMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircleGoogleMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9269EC271EDC8252000D883F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C19BEFD4AAF51CF2EB77E3 /* Pods_CircleGoogleMaps.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2456D9B3BC3DD867671B862C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AC6EA1646E0FF71227211B5 /* Pods-CircleGoogleMaps.debug.xcconfig */,
+				3E16B165A94B5E2E7750B014 /* Pods-CircleGoogleMaps.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E81BA922145823F5AAB0F6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B025CFDE1DE9CD996FCC778A /* Pods_CircleGoogleMaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9269EC211EDC8251000D883F = {
+			isa = PBXGroup;
+			children = (
+				9269EC2C1EDC8252000D883F /* CircleGoogleMaps */,
+				9269EC2B1EDC8252000D883F /* Products */,
+				2456D9B3BC3DD867671B862C /* Pods */,
+				7E81BA922145823F5AAB0F6A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9269EC2B1EDC8252000D883F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9269EC2A1EDC8252000D883F /* CircleGoogleMaps.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9269EC2C1EDC8252000D883F /* CircleGoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				9269EC2D1EDC8252000D883F /* AppDelegate.swift */,
+				9269EC2F1EDC8252000D883F /* ViewController.swift */,
+				9269EC311EDC8252000D883F /* Main.storyboard */,
+				9269EC341EDC8252000D883F /* Assets.xcassets */,
+				9269EC361EDC8252000D883F /* LaunchScreen.storyboard */,
+				9269EC391EDC8252000D883F /* Info.plist */,
+				9269EC3F1EDC84E5000D883F /* InvertedCircleViewController.swift */,
+				922B19981EE4826D00B6587A /* GMSMapView+Extensions.swift */,
+				922B199A1EE4859900B6587A /* FitCircleViewController.swift */,
+			);
+			path = CircleGoogleMaps;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9269EC291EDC8252000D883F /* CircleGoogleMaps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9269EC3C1EDC8252000D883F /* Build configuration list for PBXNativeTarget "CircleGoogleMaps" */;
+			buildPhases = (
+				2EC8444D1C2920CF07E3894C /* [CP] Check Pods Manifest.lock */,
+				9269EC261EDC8252000D883F /* Sources */,
+				9269EC271EDC8252000D883F /* Frameworks */,
+				9269EC281EDC8252000D883F /* Resources */,
+				E8B66CD166E2CBCFA237D07C /* [CP] Embed Pods Frameworks */,
+				DC2FC3A6DED5CD2E5AFF6642 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircleGoogleMaps;
+			productName = CircleGoogleMaps;
+			productReference = 9269EC2A1EDC8252000D883F /* CircleGoogleMaps.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9269EC221EDC8251000D883F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Vedusog;
+				TargetAttributes = {
+					9269EC291EDC8252000D883F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VV528E4X2Y;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9269EC251EDC8251000D883F /* Build configuration list for PBXProject "CircleGoogleMaps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9269EC211EDC8251000D883F;
+			productRefGroup = 9269EC2B1EDC8252000D883F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9269EC291EDC8252000D883F /* CircleGoogleMaps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9269EC281EDC8252000D883F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9269EC381EDC8252000D883F /* LaunchScreen.storyboard in Resources */,
+				9269EC351EDC8252000D883F /* Assets.xcassets in Resources */,
+				9269EC331EDC8252000D883F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EC8444D1C2920CF07E3894C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC2FC3A6DED5CD2E5AFF6642 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CircleGoogleMaps/Pods-CircleGoogleMaps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8B66CD166E2CBCFA237D07C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CircleGoogleMaps/Pods-CircleGoogleMaps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9269EC261EDC8252000D883F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9269EC301EDC8252000D883F /* ViewController.swift in Sources */,
+				922B19991EE4826D00B6587A /* GMSMapView+Extensions.swift in Sources */,
+				9269EC401EDC84E5000D883F /* InvertedCircleViewController.swift in Sources */,
+				9269EC2E1EDC8252000D883F /* AppDelegate.swift in Sources */,
+				922B199B1EE4859900B6587A /* FitCircleViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9269EC311EDC8252000D883F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9269EC321EDC8252000D883F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9269EC361EDC8252000D883F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9269EC371EDC8252000D883F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9269EC3A1EDC8252000D883F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9269EC3B1EDC8252000D883F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9269EC3D1EDC8252000D883F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AC6EA1646E0FF71227211B5 /* Pods-CircleGoogleMaps.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VV528E4X2Y;
+				INFOPLIST_FILE = CircleGoogleMaps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vedusog.CircleGoogleMaps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9269EC3E1EDC8252000D883F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E16B165A94B5E2E7750B014 /* Pods-CircleGoogleMaps.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VV528E4X2Y;
+				INFOPLIST_FILE = CircleGoogleMaps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vedusog.CircleGoogleMaps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9269EC251EDC8251000D883F /* Build configuration list for PBXProject "CircleGoogleMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9269EC3A1EDC8252000D883F /* Debug */,
+				9269EC3B1EDC8252000D883F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9269EC3C1EDC8252000D883F /* Build configuration list for PBXNativeTarget "CircleGoogleMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9269EC3D1EDC8252000D883F /* Debug */,
+				9269EC3E1EDC8252000D883F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9269EC221EDC8251000D883F /* Project object */;
+}

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lto-Yg-K0F">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CircleGoogleMaps" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gab-EB-7lU">
+                                <rect key="frame" x="118.5" y="278.5" width="137" height="30"/>
+                                <state key="normal" title="Draw inverted circle"/>
+                                <connections>
+                                    <segue destination="2Mi-TO-Rpl" kind="show" id="dmr-wo-aPx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBV-Y0-nIX">
+                                <rect key="frame" x="102" y="358.5" width="170" height="30"/>
+                                <state key="normal" title="Fit map with circle image"/>
+                                <connections>
+                                    <segue destination="jds-vV-a5F" kind="show" id="0gn-X8-ESU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gab-EB-7lU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="HdD-er-Lgq"/>
+                            <constraint firstItem="UBV-Y0-nIX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="40" id="aYH-vP-d77"/>
+                            <constraint firstItem="Gab-EB-7lU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vaO-he-Izt"/>
+                            <constraint firstItem="UBV-Y0-nIX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yel-ge-Uds"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uMf-di-3Vd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="139"/>
+        </scene>
+        <!--Fit Circle View Controller-->
+        <scene sceneID="JHJ-Nj-spj">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UcC-ao-8eV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="jds-vV-a5F" customClass="FitCircleViewController" customModule="CircleGoogleMaps" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xz1-RA-KcZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="lps-Xf-Ky6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gEi-BX-maJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I1J-4A-qmi" customClass="GMSMapView">
+                                <rect key="frame" x="7" y="98.5" width="360" height="470"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="I1J-4A-qmi" secondAttribute="height" multiplier="36:47" id="FdF-aP-LGF"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map_overlay" translatesAutoresizingMaskIntoConstraints="NO" id="g6j-uD-OBC">
+                                <rect key="frame" x="7" y="98.5" width="360" height="470"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g6j-uD-OBC" firstAttribute="centerY" secondItem="I1J-4A-qmi" secondAttribute="centerY" id="53o-cO-4EJ"/>
+                            <constraint firstItem="I1J-4A-qmi" firstAttribute="width" secondItem="gEi-BX-maJ" secondAttribute="height" multiplier="360:667" id="Dk7-1y-yVZ"/>
+                            <constraint firstItem="I1J-4A-qmi" firstAttribute="centerX" secondItem="gEi-BX-maJ" secondAttribute="centerX" id="IBv-Qu-be8"/>
+                            <constraint firstItem="g6j-uD-OBC" firstAttribute="height" secondItem="I1J-4A-qmi" secondAttribute="height" id="JHc-2B-jb2"/>
+                            <constraint firstItem="g6j-uD-OBC" firstAttribute="width" secondItem="I1J-4A-qmi" secondAttribute="width" id="Sy0-Fa-wTC"/>
+                            <constraint firstItem="g6j-uD-OBC" firstAttribute="centerX" secondItem="I1J-4A-qmi" secondAttribute="centerX" id="cfw-Zj-8dq"/>
+                            <constraint firstItem="I1J-4A-qmi" firstAttribute="centerY" secondItem="gEi-BX-maJ" secondAttribute="centerY" id="zOz-d1-4ci"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="I1J-4A-qmi" id="srR-YH-zhU"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1022" y="879"/>
+        </scene>
+        <!--Inverted Circle View Controller-->
+        <scene sceneID="b03-hh-rJ6">
+            <objects>
+                <viewController id="2Mi-TO-Rpl" customClass="InvertedCircleViewController" customModule="CircleGoogleMaps" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Juc-HO-vd8"/>
+                        <viewControllerLayoutGuide type="bottom" id="cxL-fq-gcy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="llk-bH-9Rd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4C-tF-6MN" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L4C-tF-6MN" firstAttribute="leading" secondItem="llk-bH-9Rd" secondAttribute="leading" id="ejZ-qf-0R1"/>
+                            <constraint firstItem="L4C-tF-6MN" firstAttribute="top" secondItem="Juc-HO-vd8" secondAttribute="bottom" id="mZc-Va-DbK"/>
+                            <constraint firstAttribute="trailing" secondItem="L4C-tF-6MN" secondAttribute="trailing" id="n5d-FI-sLf"/>
+                            <constraint firstItem="cxL-fq-gcy" firstAttribute="top" secondItem="L4C-tF-6MN" secondAttribute="bottom" id="qeN-Mm-kmr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="L4C-tF-6MN" id="f9d-gX-KIu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dTV-BN-1Va" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sUr-mr-V5B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lto-Yg-K0F" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="f7C-y5-bhx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="knO-su-f9k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tcm-MZ-ipu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="map_overlay" width="359" height="470"/>
+    </resources>
+</document>
